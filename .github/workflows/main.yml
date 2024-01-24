@@ -1,0 +1,12 @@
+name: Automation
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  automated-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automated Task
+        run: echo "Running a scheduled task!"
